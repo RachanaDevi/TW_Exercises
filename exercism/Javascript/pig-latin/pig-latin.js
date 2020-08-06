@@ -8,7 +8,7 @@ class translator {
     static add_ay_to_word(word){
         if(this.is_two_letter_word(word) && this.has_second_letter_as_y(word)){
 	        return word[1]+word[0]+'ay';
-	    } 
+	} 
     
         else if(this.sounds_like_vowel(word)){
 	        return word+'ay';
