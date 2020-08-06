@@ -5,9 +5,9 @@ class translator {
 	    return sentence.split(' ').map(word=>this.add_ay_to_word(word)).join(' ');
 	}
 
-	static add_ay_to_word(word){
-    if(this.is_two_letter_word(word) && this.has_second_letter_as_y(word)){
-	    return word[1]+word[0]+'ay';
+    static add_ay_to_word(word){
+        if(this.is_two_letter_word(word) && this.has_second_letter_as_y(word)){
+	        return word[1]+word[0]+'ay';
 	}
 
     else if(this.sounds_like_vowel(word)){
